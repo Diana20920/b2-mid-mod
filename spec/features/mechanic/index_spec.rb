@@ -27,9 +27,9 @@ RSpec.describe 'Mechanic Index Page' do
       eren = Mechanic.create!(name: "Eren Jaeger", years_experience: 13)
       levi = Mechanic.create!(name: "Levi Ackerman", years_experience: 25)
       hange = Mechanic.create!(name: "Hange Zoe", years_experience: 30)
-      mechanics = Mechanic.all
+
       visit mechanics_path
-# binding.pry
+
       expect(page).to have_content(22)
     end
   end
