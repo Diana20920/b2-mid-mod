@@ -32,7 +32,7 @@ RSpec.describe 'Mechanic Show Page' do
       expect(page).to have_content("The Underground")
     end
 
-    it "And I only see the rides that are open" do
+    xit "And I only see the rides that are open" do
       levi = Mechanic.create!(name: "Levi Ackerman", years_experience: 25)
 
       forest = Ride.create!(name: "Titan Forest", thrill_rating: 4, open: true)
